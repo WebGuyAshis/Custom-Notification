@@ -9,7 +9,6 @@ btn.addEventListener('click',()=>{
     if(msg ==''){
         msg = 'Enter Text To Show!'
     }
-    closeNotification();
     showNotification(msg);
 })
 
@@ -21,7 +20,6 @@ function showNotification(msg){
         notificationContainer.style.height = "65px";
         animateBar.classList.add("animateTheBar");    
     }, 1);
-
     setTimeout(() => {
         closeNotification();
     }, 5000);
@@ -35,5 +33,3 @@ function closeNotification(){
         notificationContainer.style.display = "none";
     },1000);
 }
-
-// showNotification("go to sleep")
