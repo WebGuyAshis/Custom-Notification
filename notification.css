@@ -21,6 +21,8 @@ body{
 }
 #text{
     width: 50vw;
+    max-width: 300px;
+    min-width:200px ;
     height: 35px;
     border-radius: 5px;
     border: none;
